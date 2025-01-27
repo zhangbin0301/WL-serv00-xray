@@ -4,7 +4,7 @@
 
 #### SSH登陆后执行
 
-1.首次部署，复制一建命令，根据需要修改参数,配合订阅服务器自动订阅
+1.首次部署，复制一建命令，根据需要修改参数,如果配合订阅服务器就能自动订阅
 ```
 export NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' && bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
