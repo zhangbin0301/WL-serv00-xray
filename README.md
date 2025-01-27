@@ -17,6 +17,10 @@ TMP_ARGO 节点类型，可选vls,vms，tuic,hy2,3x等,默认为3x，即vmess.tu
 pkill -kill -u $(whoami) && export NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' && bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 
-推荐一个抱脸保活项目:
+#### 推荐一个抱脸保活项目:
 
 https://github.com/dsadsadsss/serv00-baohuo.git
+
+#### 其他平台通用脚本
+
+https://github.com/dsadsadsss/java-wanju.git
