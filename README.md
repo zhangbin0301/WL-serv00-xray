@@ -24,3 +24,7 @@ https://github.com/dsadsadsss/serv00-baohuo.git
 #### 其他平台通用脚本
 
 https://github.com/dsadsadsss/java-wanju.git
+
+
+#### 博客
+https://blog.nezha.nyc.mn/
