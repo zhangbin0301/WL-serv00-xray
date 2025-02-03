@@ -6,7 +6,7 @@
 
 1.首次部署，复制一建命令，根据需要修改参数,如果配合订阅服务器就能自动订阅，搭建教程看最下面的链接
 ```
-NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash -c "$(curl -Ls https://dl.argo.nyc.mn/ser.sh)"
+NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 可选参数:TOK 隧道key ，ARGO_DOMAIN 隧道域名 ，UUID ，SUB_NAME 节点名称，
 
@@ -14,7 +14,7 @@ TMP_ARGO 节点类型，可选vls,vms，rel,socks,tuic,hy2,3x等,默认为3x，�
 
 2.重新部署
 ```
-pkill -kill -u $(whoami) && NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash -c "$(curl -Ls https://dl.argo.nyc.mn/ser.sh)"
+pkill -kill -u $(whoami) && NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 
 
