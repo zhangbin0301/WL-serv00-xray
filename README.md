@@ -14,7 +14,7 @@ TMP_ARGO 节点类型，可选vls,vms，rel,socks,tuic,hy2,3x等,默认为3x，�
 
 2.重新部署
 ```
-pkill -kill -u $(whoami) && NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
+pkill -kill -u $(whoami);NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 
 
