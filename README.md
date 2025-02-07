@@ -17,6 +17,9 @@ TMP_ARGO 节点类型，可选vls,vms，rel,socks,tuic,hy2,3x等,默认为3x，�
 pkill -kill -u $(whoami);NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 
+```
+pkill -kill -u $(whoami);NEZHA_SERVER='nazhe.841013.xyz' NEZHA_KEY='gw0pzV6zmlSrPUshxP' SUB_NAME='Serv00.com-s0' bash <(curl -Ls raw.githubusercontent.com/zhangbin0301/WL-serv00-xray/refs/heads/main/ser.sh)
+```
 
 #### 推荐一个抱脸保活项目:
 
