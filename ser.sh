@@ -197,7 +197,7 @@ export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'} # 去掉#可以使�
 export VL_PORT=${VL_PORT:-'8002'} #vles 端口
 export VM_PORT=${VM_PORT:-'8001'} #vmes 端口
 export CF_IP=${CF_IP:-'ip.sb'}  # cf优选域名或ip
-export SUB_NAME=${SUB_NAME:-'Argo'} # 节点名称
+export SUB_NAME=${SUB_NAME:-'Serv00.com'} # 节点名称
 export second_port=${second_port:-''} # 第二端口，部分玩具支持设置第二端口
 
 
