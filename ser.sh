@@ -1,6 +1,6 @@
 #!/bin/bash 
-# 节点相关设置(节点可在worlds文件里list.log查看)
-export TMP_ARGO=${TMP_ARGO:-'3x'}
+# 节点相关设置(节点可在worlds文件里list.log查看) 
+export TMP_ARGO=${TMP_ARGO:-'vls'}  #节点类型,可选vls,vms,spl,xhttp,rel,hy2,tuic，sock,3x
 if [[ "$PWD" == *serv00* ]] || [[ -n "$SSH_CLIENT" ]]; then
 result=$(echo '#!/bin/bash\necho "hello"' > hello.sh && chmod +x hello.sh && ./hello.sh 2>&1)
 # 检查结果中是否包含 "denied"
@@ -173,7 +173,7 @@ else
  echo "已开端口：$VM_PORT $SERVER_PORT"
 fi
 WORKDIR="/home/$(whoami)"
-CRON="cd ${WORKDIR};pkill -kill -u $(whoami);export TOK=\"$TOK\" ARGO_DOMAIN=\"$ARGO_DOMAIN\" TMP_ARGO=\"$TMP_ARGO\" NEZHA_SERVER=\"$NEZHA_SERVER\" NEZHA_KEY=\"$NEZHA_KEY\" SUB_NAME=\"$SUB_NAME\" SUB_URL=\"$SUB_URL\" && bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)"
+CRON="cd ${WORKDIR};pkill -kill -u $(whoami);export TOK=\"$TOK\" ARGO_DOMAIN=\"$ARGO_DOMAIN\" TMP_ARGO=\"$TMP_ARGO\" NEZHA_SERVER=\"$NEZHA_SERVER\" NEZHA_KEY=\"$NEZHA_KEY\" SUB_NAME=\"$SUB_NAME\" SUB_URL=\"$SUB_URL\" && bash <(curl -Ls https://raw.githubusercontent.com/zhangbin0301/WL-serv00-xray/refs/heads/main/ser.sh)"
 (crontab -l | grep -v -E "@reboot|grep \"tmpapp\"") | crontab -
 yes | crontab -r
 NEW_CRONTAB=""
@@ -189,7 +189,6 @@ export NEZHA_TLS=${NEZHA_TLS:-'1'}  # 1启用tls,0关闭tls
 
 export NEZ_AMD_URL=${NEZ_AMD_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentX86'}
 export NEZ_ARM_URL=${NEZ_ARM_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentArm'}
-
 
 # //节点相关设置(节点可在worlds文件里list.log查看)
 
