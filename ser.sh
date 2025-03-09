@@ -189,7 +189,7 @@ export NEZHA_TLS=${NEZHA_TLS:-'1'}  # 1启用tls,0关闭tls
 
 export NEZ_AMD_URL=${NEZ_AMD_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentX86'}
 export NEZ_ARM_URL=${NEZ_ARM_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentArm'}
-export NEZ_BSD_URL=${NEZ_BSD_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentFSD-172'}
+export NEZ_BSD_URL=${NEZ_BSD_URL:-'https://raw.githubusercontent.com/zhangbin0301/myfiles/refs/heads/main/agentFreebsd'}
 
 # //节点相关设置(节点可在worlds文件里list.log查看)
 
